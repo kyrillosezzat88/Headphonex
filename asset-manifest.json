@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Headphonex/static/css/main.dee5604e.chunk.css",
-    "main.js": "/Headphonex/static/js/main.eb61aba1.chunk.js",
-    "main.js.map": "/Headphonex/static/js/main.eb61aba1.chunk.js.map",
+    "main.js": "/Headphonex/static/js/main.31f189d1.chunk.js",
+    "main.js.map": "/Headphonex/static/js/main.31f189d1.chunk.js.map",
     "runtime-main.js": "/Headphonex/static/js/runtime-main.d1a54d07.js",
     "runtime-main.js.map": "/Headphonex/static/js/runtime-main.d1a54d07.js.map",
     "static/css/2.47e06e2e.chunk.css": "/Headphonex/static/css/2.47e06e2e.chunk.css",
     "static/js/2.4282124a.chunk.js": "/Headphonex/static/js/2.4282124a.chunk.js",
     "static/js/2.4282124a.chunk.js.map": "/Headphonex/static/js/2.4282124a.chunk.js.map",
     "index.html": "/Headphonex/index.html",
-    "precache-manifest.8cad7cbcc95dbb28b44d75788c1b69f2.js": "/Headphonex/precache-manifest.8cad7cbcc95dbb28b44d75788c1b69f2.js",
+    "precache-manifest.bcbaf173294ced9eb7442e58d8a2e068.js": "/Headphonex/precache-manifest.bcbaf173294ced9eb7442e58d8a2e068.js",
     "service-worker.js": "/Headphonex/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/Headphonex/static/css/2.47e06e2e.chunk.css.map",
     "static/css/main.dee5604e.chunk.css.map": "/Headphonex/static/css/main.dee5604e.chunk.css.map",
@@ -46,6 +46,6 @@
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.4282124a.chunk.js",
     "static/css/main.dee5604e.chunk.css",
-    "static/js/main.eb61aba1.chunk.js"
+    "static/js/main.31f189d1.chunk.js"
   ]
 }

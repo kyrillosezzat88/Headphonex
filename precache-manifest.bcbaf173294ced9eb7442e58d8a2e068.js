@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "313a63053b5a3f495df4aee3060581b3",
+    "revision": "e21c9ce0a1dd22bfc3ac5e4d64456479",
     "url": "/Headphonex/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Headphonex/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "4725d6de705999018c3e",
+    "revision": "5cb39bc7545242713974",
     "url": "/Headphonex/static/css/main.dee5604e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Headphonex/static/js/2.4282124a.chunk.js.LICENSE"
   },
   {
-    "revision": "4725d6de705999018c3e",
-    "url": "/Headphonex/static/js/main.eb61aba1.chunk.js"
+    "revision": "5cb39bc7545242713974",
+    "url": "/Headphonex/static/js/main.31f189d1.chunk.js"
   },
   {
     "revision": "fb9a10a39312303022a7",
