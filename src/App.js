@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/App.css';
-import {BrowserRouter , Route , Switch} from 'react-router-dom'
+import {HashRouter , Route , Switch} from 'react-router-dom'
 import Navbar from './Components/Parts/Navbar'
 import Home from './Components/Pages/Home'
 import ShopContextProvider from './Context/ShopContext';
@@ -27,7 +27,7 @@ function App() {
     window.pageYOffset > 700 ? scrollTop.style.display = 'block' : scrollTop.style.display = 'none' 
   }
   return (
-    <BrowserRouter basename='/' >
+    <HashRouter basename='/' >
       <div className="App">
         <ShopContextProvider>
           <Navbar/>
@@ -57,7 +57,7 @@ function App() {
           <i className="fas fa-chevron-up"></i>
         </button>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
