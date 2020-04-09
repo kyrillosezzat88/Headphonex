@@ -27,7 +27,7 @@ function App() {
     window.pageYOffset > 700 ? scrollTop.style.display = 'block' : scrollTop.style.display = 'none' 
   }
   return (
-    <BrowserRouter basename='/Home'>
+    <BrowserRouter>
       <div className="App">
         <ShopContextProvider>
           <Navbar/>
@@ -36,8 +36,7 @@ function App() {
           <CartMenu/>
           <Search/>
           <Switch>
-            <Route exact path={'/'} component={Home} />
-            <Route path={'/Home'} component={Home} />
+            <Route exact path='/' component={Home} />
             <Route path='/Product/:pro_id' component={Product} />
             <Route path='/Cart' component={Cart} />
             <Route path='/Shop' component={Shop} />
