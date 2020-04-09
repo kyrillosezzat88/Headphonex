@@ -27,7 +27,7 @@ function App() {
     window.pageYOffset > 700 ? scrollTop.style.display = 'block' : scrollTop.style.display = 'none' 
   }
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/' >
       <div className="App">
         <ShopContextProvider>
           <Navbar/>
