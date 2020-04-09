@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("../Fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url("../Fonts/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("../Fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url("../Fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Black';
+  src: url("../Fonts/WorkSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  src: url("../Fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url("../Fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url("../Fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  src: url("../Fonts/WorkSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url("../Fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url("../Fonts/WorkSans-Regular.ttf");
+}
+
+.cart {
+  padding: 50px 0;
+  min-height: calc(100vh - 68px);
+  max-height: 100%;
+}
+
+.cart h1 {
+  text-transform: uppercase;
+}
+
+.cart .proRow {
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 5px 2px #eee;
+          box-shadow: 0 0 5px 2px #eee;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f6f8), to(#f4f6f8));
+  background: linear-gradient(to bottom, #f4f6f8, #f4f6f8);
+  background-size: 100% 0%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.cart .proRow .col-4, .cart .proRow .col-2 {
+  padding: 0;
+}
+
+.cart .proRow a {
+  text-decoration: none;
+}
+
+.cart .proRow .product {
+  border-right: 1px solid #eee;
+  height: 100%;
+}
+
+.cart .proRow .product img {
+  margin-right: 15px;
+}
+
+.cart .proRow .product .content h1 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: #909090;
+  color: #000;
+}
+
+.cart .proRow .product .content p {
+  font-family: 'WorkSans-Regular';
+  color: #aaaaaa;
+}
+
+.cart .proRow .product .content .stars .fa-star {
+  color: #cccccc;
+}
+
+.cart .proRow .product .content .stars .fa-star:nth-child(1) {
+  color: #ff0030;
+}
+
+.cart .proRow .product .content .stars .fa-star:nth-child(2) {
+  color: #ff0030;
+}
+
+.cart .proRow .product .content .stars .fa-star:nth-child(3) {
+  color: #ff0030;
+}
+
+.cart .proRow .price {
+  text-align: center;
+  border-right: 1px solid #eee;
+  height: 100%;
+}
+
+.cart .proRow .price h1 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: #909090;
+}
+
+.cart .proRow .price span {
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.cart .proRow .qty {
+  text-align: center;
+  border-right: 1px solid #eee;
+  height: 100%;
+}
+
+.cart .proRow .qty h1 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: #909090;
+}
+
+.cart .proRow .qty .counter span {
+  margin: 0px 5px;
+  font-family: 'Oswald';
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cart .proRow .qty .counter span .fas {
+  font-size: 12px;
+}
+
+.cart .proRow .total {
+  text-align: center;
+  border-right: 1px solid #eee;
+  height: 100%;
+}
+
+.cart .proRow .total h1 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: #909090;
+}
+
+.cart .proRow .total span {
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.cart .proRow .delete {
+  text-align: center;
+  border-right: 1px solid #eee;
+  height: 100%;
+  border: none;
+}
+
+.cart .proRow .delete h1 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: #909090;
+}
+
+.cart .proRow .delete .fas {
+  cursor: pointer;
+}
+
+.cart .proRow:hover {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 100% 100%;
+}
+
+.cart .checkout {
+  margin: 25px 0;
+}
+
+.cart .checkout .total h3 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  color: #909090;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.cart .checkout .total h1 {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Oswald';
+  margin: 0 15px;
+}
+
+.cart .checkout .total h1 span {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.cart .empty-cart {
+  height: 65vh;
+}
+
+.cart .empty-cart h2 {
+  margin: 20px 0;
+  color: #ff0030;
+  font-family: 'WorkSans-Regular';
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Cart.css.map */

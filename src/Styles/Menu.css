@@ -1,0 +1,124 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0%;
+  min-width: 100%;
+  background: #ffffff;
+  z-index: 9999;
+  overflow: hidden;
+  display: none;
+}
+
+.menu .fa-times {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.menu ul {
+  position: relative;
+}
+
+.menu ul:hover li a {
+  color: #0002;
+}
+
+.menu ul li {
+  text-align: center;
+}
+
+.menu ul li:hover a {
+  color: #000;
+}
+
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul li a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  -webkit-transition: letter-spacing .5s , left .5s;
+  transition: letter-spacing .5s , left .5s;
+}
+
+@media all and (max-width: 769px) {
+  .menu ul li a::before {
+    font-size: 2em;
+  }
+}
+
+.menu ul li a:hover::before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+}
+
+.menu ul li:nth-child(6n+1) a:before {
+  background: #9F7AB0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.menu ul li:nth-child(6n+2) a:before {
+  background: #ff0030;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.menu ul li:nth-child(6n+3) a:before {
+  background: #ffffff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.menu ul li:nth-child(6n+4) a:before {
+  background: #9F7AB0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/*# sourceMappingURL=Menu.css.map */

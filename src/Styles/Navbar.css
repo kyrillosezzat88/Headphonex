@@ -1,0 +1,80 @@
+nav {
+  background: transparent;
+  padding: 20px 0;
+  background: #9F7AB0;
+  color: #ffffff;
+  font-family: 'Oswald-Regular';
+  font-size: 14px;
+}
+
+nav h6 {
+  font-family: 'WorkSans-SemiBold';
+}
+
+nav h6 a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+nav i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+nav .shoppingCart {
+  position: relative;
+  cursor: pointer;
+}
+
+nav .shoppingCart .fa-shopping-bag {
+  font-size: 18px;
+}
+
+nav .shoppingCart .amount {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  background: #9F7AB0;
+  color: #ffffff;
+  width: 15px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-family: 'WorkSans-Medium';
+}
+
+nav .select button {
+  padding: 0 5px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+nav .select ul {
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  right: 30%;
+  padding: 5px 0;
+  width: 100px;
+  display: none;
+}
+
+nav .select ul a {
+  color: #000000;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+nav .select ul a:hover {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: none;
+  color: #9F7AB0;
+}
+
+/* White Navbar insted of javascipt code in navbar.js file */
+/*# sourceMappingURL=Navbar.css.map */

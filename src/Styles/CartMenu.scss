@@ -1,0 +1,77 @@
+@import 'Colors';
+@import 'GlobalStyles';
+.cartMenu{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:0px;
+    min-width:100%;
+    z-index: 99999;
+    background: $White;
+    overflow: hidden;
+    display:none;
+    .fa-times{
+        position:absolute;
+        top:5%;
+        right: 5%;
+        cursor: pointer;
+    }
+    .item{
+        height:200px;
+        border:1px solid #eee;
+        box-shadow: 0 0 5px 2px #eee;
+        margin:20px 0;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+        &:hover::before{
+            content: 'X';
+            transition: all .5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color:#fff;
+            font-size: 25px;
+            background: rgba(.8,.8,.8,.5);
+            position: absolute;
+            top: 0;
+            left: 4%;
+            width: 93%;
+            height: 84%;
+            margin:20px 0;
+            border-radius: 4px;
+            padding: 0 !important;
+        }
+        h5{
+            color:$MainColor;
+        }
+        .stars{
+           i{
+            color:$MenuColor;
+            &:last-child{
+                color:#eee;
+            }
+            }
+        }
+    }
+    .cart-btn{
+        @include button();
+        a{
+            @include button();
+            text-decoration:none;
+            color:#000;
+            background:linear-gradient(90deg , $MainColor , $MainColor);
+            background-repeat: no-repeat;
+            background-position: 0% 100%;
+            background-size: 20% 100%;
+            &:hover{
+                color:$White;
+            }
+        }
+    }
+
+}

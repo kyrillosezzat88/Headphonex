@@ -1,0 +1,50 @@
+//style Search Part
+@import 'Colors';
+.search{
+    position: absolute;
+    top:0;
+    right:0;
+    min-height:0px;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: 99999;
+    background:$White;
+    display: none;
+    form{
+        min-height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        input{
+            width: 100%;
+            outline: none;
+            padding: 5px 10px ;
+            border:1px solid $White;
+            box-shadow: 0 0 5px 0px #ddd;
+            border-radius: 4px;
+            transition: all .4s ease-in-out;
+            &:focus{
+                border:1px solid $MainColor;
+                transition: all .4s ease-in-out;
+            }
+        }
+        .fa-search{
+            position: absolute;
+            right: 0%;
+            background:$MainColor;
+            padding: 10px;
+            color:$White;
+            border-radius: 4px;
+            cursor: pointer;
+            // border-top-left-radius: 50%;
+            // border-bottom-left-radius: 50%;
+        }
+    }
+    .fa-times{
+        position: absolute;
+        top: 15%;
+        right: 3%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,145 @@
+@import 'Colors';
+@import 'Fonts';
+
+@mixin Heading {
+    font-size:16px;
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+    color:#909090;
+}
+@mixin content {
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+@mixin MainDiv {
+    text-align: center;
+    border-right: 1px solid #eee;
+    height: 100%;
+}
+.cart{
+    padding: 50px 0;
+    min-height:calc(100vh - 68px);
+    max-height: 100%;
+    h1{text-transform: uppercase;}
+    .proRow{
+        border:1px solid #eee;
+        box-shadow: 0 0 5px 2px #eee;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        .col-4 , .col-2{padding: 0;}
+        a{text-decoration: none;}
+        .product{
+            border-right: 1px solid #eee;
+            height: 100%;
+            img{
+                margin-right: 15px;
+            }
+            .content{
+                h1{
+                    @include Heading();
+                    color:#000;
+                }
+                p{
+                    font-family: 'WorkSans-Regular';
+                    color: $Para;
+                }
+                .stars{
+                    .fa-star{
+                        color:$EmptyStars;
+                    }
+                    @for $i from 1 to 4 {
+                        .fa-star:nth-child(#{$i}){
+                            color:$MenuColor;
+                        }
+                    }
+                }
+            }
+        }
+        .price{
+            @include MainDiv();
+            h1{
+                @include Heading();
+            }
+            span{
+               @include content();
+            }
+        }
+        .qty{
+            @include MainDiv();
+            h1{
+                @include Heading();
+            }
+            .counter{
+                span{
+                    margin:0px 5px;
+                    font-family: 'Oswald';
+                    font-size: 14px;
+                    cursor: pointer;
+                    .fas{font-size: 12px;}
+                }
+            }
+        }
+        .total{
+            @include MainDiv();
+            h1{
+                @include Heading();
+            }
+            span{
+                @include content();
+            }
+        }
+        .delete{
+            @include MainDiv();
+            border:none;
+            h1{
+                @include Heading();
+            }
+            .fas{
+                cursor: pointer;
+            }
+        }
+        //Hover Effect
+        background:linear-gradient(to bottom , #f4f6f8 , #f4f6f8);
+        background-size: 100% 0%;
+        background-position:0% 100%;
+        background-repeat:no-repeat;
+        transition: all .5s ease-in-out;
+        &:hover{
+            transition: all .4s ease-in-out;
+            background-size: 100% 100%;
+        }
+    }
+    .checkout{
+        margin: 25px 0;
+        .total{
+            h3{
+                font-size: 16px;
+                font-family: 'Oswald';
+                color: #909090;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+            h1{
+                display: inline-block;
+                font-size: 30px;
+                font-family: 'Oswald';
+                margin: 0 15px;
+                span{
+                    font-size: 16px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .empty-cart{
+        height: 65vh;
+        h2{
+            margin:20px 0;
+            color:$MenuColor;
+            font-family: 'WorkSans-Regular';
+            text-transform: uppercase;
+        }
+    }
+}

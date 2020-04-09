@@ -1,0 +1,103 @@
+//Imports All Styles 
+@import 'Colors.css';
+@import 'Fonts.css';
+@import 'GlobalStyles.css';
+@import 'Navbar.css';
+@import 'Home.css';
+@import 'Menu.css';
+@import 'CartMenu.css';
+@import 'Search.css';
+@import 'Cart.css';
+@import 'Product.css';
+@import 'Model.css';
+@import 'overlay.css';
+@import 'Footer.css';
+@import 'Contact.css';
+@import 'Page404.css';
+
+//style Scroll bar 
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background:#9F7AB0;
+    &:hover{
+        background: #ff0030;
+    }
+}
+::-webkit-scrollbar-track{
+    background:#ddd;
+}
+*{
+    scroll-behavior: smooth;
+}
+.App{
+    position: relative;
+    //preLoading screen
+    .preloading{
+        position: fixed;
+        top: 0;
+        left:0;
+        background: #1c1c1c;
+        z-index: 999999999999;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all .4s ease-in-out;
+        .loading{
+            position: relative;
+            h2{
+                position: absolute;
+                transform: translate(-50% ,-50%);
+                font-size: 8em;
+                color: #fff;
+                text-transform: uppercase;
+                font-family: 'Oswald';
+                letter-spacing: 2px;
+                @media all and (max-width:769px){
+                    font-size: 3em;
+                }
+                &:nth-child(1){
+                    color: transparent;
+                    -webkit-text-stroke: 2px #9F7AB0;
+                }
+                &:nth-child(2){
+                    color: #9F7AB0;
+                    animation: wave 4s ease-in-out infinite;
+                }
+                @keyframes wave {
+                    0%,100% {
+                        clip-path:polygon(0% 45% , 15% 44% ,32% 50%, 54% 60% , 70% 61% ,84% 59% ,100% 52%,100% 100%,0% 100%);
+                    }
+                    50%{
+                        clip-path:polygon(0 60% , 16% 65% , 34% 66% , 51% 62% , 67% 50% ,84% 45% ,100% 46% ,100% 100% , 0% 100%);
+                    }
+                }
+            }
+        }
+    }
+    /*Style scroll button*/
+    .ScrollTop{
+        position: fixed;
+        bottom: 3%;
+        right: 2%;
+        width: 50px;
+        height: 50px;
+        border:none;
+        outline: none;
+        border-radius: 50%;
+        background: #1c1c1c;
+        color:#fff;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        display: none;
+        &:hover{
+            transition: all .4s ease-in-out;
+            background:#ff0030;
+        }
+    }
+}

@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("../Fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url("../Fonts/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("../Fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url("../Fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Black';
+  src: url("../Fonts/WorkSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  src: url("../Fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url("../Fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url("../Fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  src: url("../Fonts/WorkSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url("../Fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url("../Fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("../Fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url("../Fonts/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("../Fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url("../Fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Black';
+  src: url("../Fonts/WorkSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  src: url("../Fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url("../Fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url("../Fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  src: url("../Fonts/WorkSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url("../Fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url("../Fonts/WorkSans-Regular.ttf");
+}
+
+.stars i {
+  color: #cccccc;
+}
+
+.stars i:nth-child(1) {
+  color: #ff0030;
+}
+
+.stars i:nth-child(2) {
+  color: #ff0030;
+}
+
+.stars i:nth-child(3) {
+  color: #ff0030;
+}
+
+.hoverButton {
+  background: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+  background: linear-gradient(to bottom, #000000, #000000);
+  background-size: 100% 0%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #ffffff;
+  padding: 5px 50px;
+  outline: none;
+  font-family: 'Oswald-Regular';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.hoverButton:hover {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 100% 100%;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.Contact {
+  overflow: hidden;
+}
+
+.Contact .row {
+  margin-top: 25px;
+}
+
+.Contact .map .mapimg {
+  height: 500px;
+  background: url("../Images/map.png");
+  background-position: center;
+}
+
+.Contact .map .locations {
+  background: #ffffff;
+}
+
+.Contact .map .locations p {
+  display: inline-block;
+  width: 175px;
+  padding: 35px 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Oswald-Regular';
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.Contact .map .locations p:hover {
+  background: #f2f4f6;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.Contact .map .locations .active {
+  background: #f2f4f6;
+}
+
+.Contact .contact-form h1 {
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.Contact .contact-form h5 {
+  font-size: 16px;
+  font-family: 'Oswald';
+  margin-top: 10px;
+}
+
+.Contact .contact-form p {
+  font-family: 'WorkSans-Regular';
+  color: #aaaaaa;
+}
+
+.Contact .contact-form form .group label {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-family: 'Oswald-Regular';
+  display: block;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.Contact .contact-form form .group input {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  margin: 5px 0 10px 0;
+  padding: 0 5px;
+  width: 45%;
+}
+
+.Contact .contact-form form .group textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  resize: none;
+  outline: none;
+  width: 45%;
+}
+
+.Contact .contact-form form button {
+  background: none;
+  border: 1px solid #ffffff;
+  padding: 3px 25px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(90deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 20% 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-family: 'Oswald-Light';
+  letter-spacing: 1px;
+  outline: none;
+  color: #000;
+  border: 1px solid #000;
+  background: -webkit-gradient(linear, left top, right top, from(#000), to(#000));
+  background: linear-gradient(90deg, #000, #000);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 20% 100%;
+  font-family: 'Oswald-Regular';
+  font-size: 14px;
+  padding: 3px 18px;
+  margin-top: 10px;
+}
+
+.Contact .contact-form form button:hover {
+  background-size: 100% 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #000000;
+}
+
+.Contact .contact-form form button:hover {
+  color: #fff;
+}
+
+.Contact .contact-form form button .fas {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=Contact.css.map */

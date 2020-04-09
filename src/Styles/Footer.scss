@@ -1,0 +1,82 @@
+@import 'Colors';
+@import 'Fonts';
+@import 'GlobalStyles';
+/*Style Footer*/  
+.Footer{
+    margin-top:80px;
+    padding-top:55px;
+    border-top:1px solid #cccccc;
+    text-transform:uppercase;
+    text-align: center;
+    .links{
+        font-family:'Oswald-Regular';
+        margin-bottom:10px;
+        li{cursor: pointer;margin:10px 0 ;}
+    }
+    .Social{
+        margin-bottom:10px;
+        h6{
+            color:$MainColor;
+            font-family:'Oswald-Regular';
+            font-size:18px;
+            letter-spacing:2px;
+            margin-bottom: 20px;
+        }
+        i{
+            margin: 0 15px;
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                transition: all .4s ease-in-out;
+                color:$MainColor;
+            }
+        }
+        @media all and (max-width:768px){
+            h6{
+                margin-left: 0;
+            }
+            i{
+                margin:0;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .subscribe{
+        input{
+            border:none;
+            border-bottom:1px solid #000;
+            outline:none;
+            width:100%;
+            margin-bottom:25px;
+            padding: 0 5px 5px 5px;
+        }
+        button{
+            @include button();
+            background:linear-gradient(90deg , $MainColor , $MainColor);
+            background-repeat: no-repeat;
+            background-position: 0% 100%;
+            background-size: 20% 100%;
+            color:$HeaderColor;
+            border:1px solid $MainColor;
+            font-family:'Oswald-Regular';
+            &:hover{
+                color:#fff
+            }
+        }
+    }
+    .copyRights{
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+        font-family: 'WorkSans-SemiBold';
+        background: $MainColor;
+        color:#fff;
+        margin-top: 20px;
+        text-transform: capitalize;
+        a{
+            text-decoration: none;
+            color:#1c1c1c;
+        }
+    }
+}

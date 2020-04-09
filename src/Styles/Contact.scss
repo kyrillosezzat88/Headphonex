@@ -1,0 +1,97 @@
+@import 'Colors';
+@import 'Fonts';
+@import 'GlobalStyles';
+.Contact{
+    overflow: hidden;
+    .row{
+        margin-top:25px;
+    }
+    .map{
+        .mapimg{
+            height: 500px;
+            background:url('../Images/map.png');
+            background-position: center;
+        }
+        .locations{
+            background: $White;
+            p{
+                display: inline-block;
+                width: 175px;
+                padding: 35px 0;
+                margin: 0;
+                text-align: center;
+                font-family:'Oswald-Regular';
+                font-size:14px;
+                text-transform: uppercase;
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background: #f2f4f6;
+                    transition: all .4s ease-in-out;
+                }
+            }
+            .active{background: #f2f4f6;}
+        }
+    }
+    .contact-form{
+        h1{
+            @include Title();
+            font-size: 48px;
+        }
+        h5{
+            font-size: 16px;
+            font-family: 'Oswald';
+            margin-top: 10px;
+        }
+        p{
+            font-family: 'WorkSans-Regular';
+            color: $Para;
+        }
+        form{
+            .group{
+                label{
+                    color: $Para;
+                    font-size: 14px;
+                    font-family:'Oswald-Regular';
+                    display: block;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                }
+                input{
+                    border:none;
+                    border-bottom: 1px solid #000;
+                    outline: none;
+                    margin:5px 0 10px 0;
+                    padding: 0 5px;
+                    width: 45%;
+                }
+                textarea{
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    resize: none;
+                    outline: none;
+                    width: 45%;
+                }
+            }
+            button{
+                @include button();
+                color: #000;
+                border: 1px solid #000;
+                background:linear-gradient(90deg , #000 , #000);
+                background-repeat: no-repeat;
+                background-position: 0% 100%;
+                background-size: 20% 100%;
+                font-family:'Oswald-Regular';
+                font-size: 14px;
+                padding: 3px 18px;
+                margin-top: 10px;
+                &:hover{
+                    color:#fff;
+                }
+                .fas{
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+}

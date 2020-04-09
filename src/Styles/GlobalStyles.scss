@@ -1,0 +1,63 @@
+@import 'Colors';
+@import 'Fonts';
+
+//Global Button styles
+@mixin button {
+    background:none;
+    border:1px solid $White;
+    padding: 3px 25px;
+    color:$White;
+    background:linear-gradient(90deg , #fff , #fff);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 20% 100%;
+    transition:  all .5s ease-in-out;
+    font-family:'Oswald-Light';
+    letter-spacing: 1px;
+    outline: none;
+    &:hover{
+        background-size: 100% 100%;
+        transition:  all .5s ease-in-out;
+        color:$HeaderColor;
+
+    }
+}
+// style header for all pages
+@mixin Title {
+    font-family: 'Oswald';
+    font-size: 60px;
+    text-transform: uppercase;
+    @media (max-width:769px) {
+        font-size: 40px !important;
+    }
+}
+
+.stars i{color:#cccccc;}
+@for $i from 1 to 4 {
+    .stars i:nth-child(#{$i}){
+        color:$MenuColor;
+    }
+}
+.hoverButton{
+    background: $HeaderColor;
+    background:linear-gradient(to bottom , $HeaderColor , $HeaderColor);
+    background-size: 100% 0%;
+    background-position:0% 100%;
+    background-repeat:no-repeat;
+    transition: all .5s ease-in-out;    
+    color:$White;
+    padding: 5px 50px;
+    outline: none;
+    font-family:'Oswald-Regular';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: 1px solid $HeaderColor;
+    color: $HeaderColor;
+    &:hover{
+        transition: all .4s ease-in-out;
+        background-size:100% 100%;
+        color:$White;
+        border: 1px solid $HeaderColor;
+    }
+}

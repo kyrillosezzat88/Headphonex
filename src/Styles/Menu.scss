@@ -1,0 +1,90 @@
+//Style menu
+@import 'Colors';
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    min-width: 100%;
+    background:$White;
+    z-index: 9999;
+    overflow: hidden;
+    display:none;
+    .fa-times{
+        position:absolute;
+        top:10%;
+        right: 10%;
+        cursor: pointer;
+        
+    }
+    ul{
+        position: relative;
+        &:hover li a{
+            color:#0002;
+        }
+        li{
+            text-align: center;
+            &:hover a{
+                color:#000;
+            }
+            a{
+                color:#333;
+                text-decoration: none;
+                font-size: 3em;
+                padding: 5px 20px;
+                display: inline-flex;
+                font-weight: 700;
+                transition: 0.5s;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    left:40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 4em;
+                    color:rgba(0,0,0,0.1);
+                    border-radius: 50%;
+                    transform: translate(-50% , -50%);
+                    z-index: -1;
+                    opacity: 0;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    letter-spacing: 500px;
+                    transition: letter-spacing .5s , left .5s;
+                    @media all and (max-width:769px){
+                        font-size:2em;
+                    }
+                }
+                &:hover::before{
+                    content:attr(data-text);
+                    opacity: 1;
+                    left: 50%;
+                    letter-spacing: 10px;
+                    width: 1800px;
+                    height: 1800px;
+                }
+            }
+            &:nth-child(6n+1) a:before{
+                background: $MainColor;
+                transition: all .3s ease-in-out;
+            }
+            &:nth-child(6n+2) a:before{
+                background: $MenuColor;
+                transition: all .3s ease-in-out;
+            }
+            &:nth-child(6n+3) a:before{
+                background: $White;
+                transition: all .3s ease-in-out;
+            }
+            &:nth-child(6n+4) a:before{
+                background: $MainColor;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}

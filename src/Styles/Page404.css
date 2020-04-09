@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("../Fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url("../Fonts/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("../Fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url("../Fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Black';
+  src: url("../Fonts/WorkSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  src: url("../Fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url("../Fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url("../Fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  src: url("../Fonts/WorkSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url("../Fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url("../Fonts/WorkSans-Regular.ttf");
+}
+
+.Erorr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 69px);
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.Erorr .num {
+  position: relative;
+}
+
+.Erorr .num h1 {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 10em;
+  color: #ff0030;
+  font-family: 'Oswald';
+  letter-spacing: 4px;
+}
+
+.Erorr .num h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ff0030;
+}
+
+.Erorr .num h1:nth-child(2) {
+  color: #ff0030;
+  -webkit-animation: wave 4s ease-in-out infinite;
+          animation: wave 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes wave {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+.Erorr h2 {
+  margin: 100px 0;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-size: 3em;
+  color: #ff0030;
+}
+/*# sourceMappingURL=Page404.css.map */

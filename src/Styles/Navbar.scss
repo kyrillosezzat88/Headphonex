@@ -1,0 +1,87 @@
+@import 'Colors';
+nav{
+    background:transparent;
+    padding:20px 0;
+    background:$MainColor;
+    color:$White;
+    font-family:'Oswald-Regular';
+    font-size: 14px;
+    h6{font-family: 'WorkSans-SemiBold'; a{text-decoration: none !important; color:#fff;}}
+    i{
+        margin:0 5px;
+        cursor: pointer;
+    }
+    .shoppingCart{
+        position: relative;
+        cursor: pointer;
+        .fa-shopping-bag{font-size:18px;}
+        .amount{
+            position: absolute;
+            top:-10%;
+            right:-10%;
+            background: $MainColor;
+            color:$White;
+            width:15px;
+            height: 16px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 12px;
+            font-family:'WorkSans-Medium';
+        }
+    }
+    .select{
+        button{
+            padding: 0 5px;
+            color:$White;
+            background:none;
+            border:none;
+            outline: none;
+        }
+        ul{
+            background: $White;
+            position: absolute;
+            top:100%;
+            right:30%;
+            padding: 5px 0;
+            width:100px;
+            display: none;
+                a{
+                    color:$HeaderColor;
+                    transition:  all .4s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        transition: all .4s ease-in-out;
+                        text-transform: none;
+                        color:$MainColor;
+                    }
+                }
+        }
+    }
+}
+
+
+/* White Navbar insted of javascipt code in navbar.js file */
+
+// .whiteNav {
+//     background:#fff !important;
+//     border-bottom: 1px solid #eee !important;
+//     color:#000 !important;
+//     .select{
+//         button{
+//             color: #000 !important;
+//         }
+//         ul{
+//             color: #000 !important;
+//         }
+//     }
+//     .shoppingCart{
+//         .amount{
+//             background: $MainColor !important;
+//         }
+//     }
+//     h6{
+//         a{
+//             color: #000 !important;
+//         }
+//     }
+// }

@@ -1,0 +1,166 @@
+@import 'Colors';
+@import 'Fonts';
+
+//animations colors dors 
+@keyframes Yellow {from{box-shadow: 0 0 0 0 Yellow}to{ box-shadow : 0 0 10px 0 Yellow}}
+@keyframes Black {from{box-shadow: 0 0 0 0 Black}to{ box-shadow : 0 0 10px 0 Black}}
+@keyframes White {from{box-shadow: 0 0 0 0 grey}to{ box-shadow : 0 0 10px 0 grey}}
+@keyframes Violet {from{box-shadow: 0 0 0 0 $MainColor}to{ box-shadow : 0 0 10px 0 $MainColor}}
+@keyframes Green {from{box-shadow: 0 0 0 0 Green}to{ box-shadow : 0 0 10px 0 Green}}
+
+.ProductInfo{
+    min-height:calc(100vh - 68px);
+    .info{
+        .details{width: 50%;}
+        h1{
+            font-size: 48px;
+            font-family: 'Oswald';
+        }
+        p{
+            margin:20px 0;
+            font-size: 20px;
+            font-family: 'WorkSans-Regular';
+            color:#585858;
+        }
+        .quantity{
+            text-align: center;
+            border-radius: 20px;
+            padding: 3px 0;
+            box-shadow: 0 0 5px 0 $MainColor;
+            font-family:'Oswald-Regular';
+            span{
+                padding:  0 15px;
+                border-right: 1px solid $Para;
+                cursor: pointer;
+                &:last-of-type{border: none;}
+            }
+            input{
+                display: inline-block;
+                width:50px;
+                border:none;
+                border-right: 1px solid $Para;
+                text-align: center;
+                outline: none;
+            }
+        }
+        .select{
+            border-radius: 20px;
+            padding:8px;
+            width: 100px;
+            box-shadow: 0 0 5px 0 $MainColor;
+            font-family:'Oswald-Regular';
+            font-size:14px;
+            text-align: center;
+            .selected{ cursor: pointer; .dot{margin-top: 0;}}
+            .options{
+                height: 0px;
+                overflow: hidden;
+                transition: all .4s ease-in-out;
+                .color{
+                    align-self: center;
+                    padding:5px 0;
+                    cursor: pointer;
+                    border-bottom: 1px solid #ddd;
+                    &:hover .dot{
+                        &[data-color='Black']{
+                            animation: Black  1s linear infinite alternate;
+                        }
+                        &[data-color='White']{
+                            animation: White  1s linear infinite alternate;
+                        }
+                        &[data-color='Violet']{
+                            animation: Violet  1s linear infinite alternate;
+                        }
+                        &[data-color='Green']{
+                            animation: Green  1s linear infinite alternate;
+                        }
+                        &[data-color='Yellow']{
+                            animation: Yellow  1s linear infinite alternate;
+                        }
+                    }
+                }
+            }
+            .dot{
+                display: inline-block;
+                width:13px;
+                height: 13px;
+                border-radius: 50%;
+                margin: 0 5px;
+                &[data-color='Black']{
+                    background: black;
+                }
+                &[data-color='White']{
+                    background: White;
+                }
+                &[data-color='Violet']{
+                    background: $MainColor;
+                }
+                &[data-color='Green']{
+                    background: Green;
+                }
+                &[data-color='Yellow']{
+                    background: Yellow;
+                }
+            }
+        }
+        button{
+            margin: 10px 0;
+            padding: 5px 20px;
+            width:150px;
+            text-transform: uppercase;
+        }
+        h6{
+            border-top:1px solid #e0e0e0;
+            color:$MainColor;
+            padding:15px 0;
+            font-size: 14px;
+            font-family: 'WorkSans-Regular';
+            cursor: pointer;
+        }
+        .amountMsg{
+            color:$MenuColor;
+            font-family: 'WorkSans-Regular';
+            margin:10px 0;
+            text-transform: uppercase;
+            transition: all .4s ease-in-out;
+            opacity: 0;
+        }
+        .outButton{
+            background: $Para;
+            outline: none;
+            color:#eee;
+            border: 1px solid $Para;
+            cursor: default;
+        }
+        @media all and (max-width:769px) {
+            margin:20px 0;
+            .details{width:100%}
+        }
+    }
+    .slider{
+        height: 100%;
+        .otherSlide{
+            margin: 10px 0;
+            img{
+                width: 60px;
+                height: 60px;
+                margin: 0 10px;
+                cursor: pointer;
+                object-fit: contain;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    box-shadow: 0 0 5px 0 $MainColor;
+                    transition: all .4s ease-in-out;
+                }
+            }
+        }
+        @media all and (max-width:769px){
+            margin: 20px 0;
+            .otherSlide{
+                img{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

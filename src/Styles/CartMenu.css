@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("../Fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url("../Fonts/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("../Fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url("../Fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Black';
+  src: url("../Fonts/WorkSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  src: url("../Fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url("../Fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url("../Fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  src: url("../Fonts/WorkSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url("../Fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url("../Fonts/WorkSans-Regular.ttf");
+}
+
+.stars i {
+  color: #cccccc;
+}
+
+.stars i:nth-child(1) {
+  color: #ff0030;
+}
+
+.stars i:nth-child(2) {
+  color: #ff0030;
+}
+
+.stars i:nth-child(3) {
+  color: #ff0030;
+}
+
+.hoverButton {
+  background: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+  background: linear-gradient(to bottom, #000000, #000000);
+  background-size: 100% 0%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #ffffff;
+  padding: 5px 50px;
+  outline: none;
+  font-family: 'Oswald-Regular';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.hoverButton:hover {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 100% 100%;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.cartMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 0px;
+  min-width: 100%;
+  z-index: 99999;
+  background: #ffffff;
+  overflow: hidden;
+  display: none;
+}
+
+.cartMenu .fa-times {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.cartMenu .item {
+  height: 200px;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 5px 2px #eee;
+          box-shadow: 0 0 5px 2px #eee;
+  margin: 20px 0;
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.cartMenu .item:hover::before {
+  content: 'X';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  background: rgba(1, 1, 1, 0.5);
+  position: absolute;
+  top: 0;
+  left: 4%;
+  width: 93%;
+  height: 84%;
+  margin: 20px 0;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.cartMenu .item h5 {
+  color: #9F7AB0;
+}
+
+.cartMenu .item .stars i {
+  color: #ff0030;
+}
+
+.cartMenu .item .stars i:last-child {
+  color: #eee;
+}
+
+.cartMenu .cart-btn {
+  background: none;
+  border: 1px solid #ffffff;
+  padding: 3px 25px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(90deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 20% 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-family: 'Oswald-Light';
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.cartMenu .cart-btn:hover {
+  background-size: 100% 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #000000;
+}
+
+.cartMenu .cart-btn a {
+  background: none;
+  border: 1px solid #ffffff;
+  padding: 3px 25px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(90deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 20% 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-family: 'Oswald-Light';
+  letter-spacing: 1px;
+  outline: none;
+  text-decoration: none;
+  color: #000;
+  background: -webkit-gradient(linear, left top, right top, from(#9F7AB0), to(#9F7AB0));
+  background: linear-gradient(90deg, #9F7AB0, #9F7AB0);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 20% 100%;
+}
+
+.cartMenu .cart-btn a:hover {
+  background-size: 100% 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #000000;
+}
+
+.cartMenu .cart-btn a:hover {
+  color: #ffffff;
+}
+/*# sourceMappingURL=CartMenu.css.map */

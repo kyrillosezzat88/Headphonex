@@ -1,0 +1,143 @@
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Colors.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Fonts.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\GlobalStyles.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Navbar.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Home.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Menu.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\CartMenu.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Search.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Cart.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Product.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Model.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\overlay.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Footer.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Contact.css);
+@import url(c:\Users\Kyrillos\Desktop\new-app\src\Styles\Page404.css);
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9F7AB0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0030;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.App {
+  position: relative;
+  /*Style scroll button*/
+}
+
+.App .preloading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1c1c1c;
+  z-index: 999999999999;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.App .preloading .loading {
+  position: relative;
+}
+
+.App .preloading .loading h2 {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 8em;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  letter-spacing: 2px;
+}
+
+@media all and (max-width: 769px) {
+  .App .preloading .loading h2 {
+    font-size: 3em;
+  }
+}
+
+.App .preloading .loading h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #9F7AB0;
+}
+
+.App .preloading .loading h2:nth-child(2) {
+  color: #9F7AB0;
+  -webkit-animation: wave 4s ease-in-out infinite;
+          animation: wave 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes wave {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+.App .ScrollTop {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #1c1c1c;
+  color: #fff;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+.App .ScrollTop:hover {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: #ff0030;
+}
+/*# sourceMappingURL=App.css.map */
