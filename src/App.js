@@ -42,7 +42,7 @@ function App() {
             <Route path='/Cart' component={Cart} />
             <Route path='/Shop' component={Shop} />
             <Route path='/Contact' component={Contact} />
-            {/* <Route component={Page404} /> */}
+            <Route component={Page404} />
           </Switch>
         </ShopContextProvider>
         {/* Preload Screen */}
