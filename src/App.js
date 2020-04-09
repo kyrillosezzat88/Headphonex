@@ -37,6 +37,7 @@ function App() {
           <Search/>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/Home' component={Home} />
             <Route path='/Product/:pro_id' component={Product} />
             <Route path='/Cart' component={Cart} />
             <Route path='/Shop' component={Shop} />
