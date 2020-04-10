@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e21c9ce0a1dd22bfc3ac5e4d64456479",
+    "revision": "75f50de2a42a306238a0fee0fd4b125b",
     "url": "/Headphonex/index.html"
   },
   {
-    "revision": "4497aa862c9355a40e8c",
+    "revision": "20e0a5dc2365d7c7b370",
     "url": "/Headphonex/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "5cb39bc7545242713974",
+    "revision": "4c5a7b85c8ad061597ac",
     "url": "/Headphonex/static/css/main.dee5604e.chunk.css"
   },
   {
-    "revision": "4497aa862c9355a40e8c",
-    "url": "/Headphonex/static/js/2.4282124a.chunk.js"
+    "revision": "20e0a5dc2365d7c7b370",
+    "url": "/Headphonex/static/js/2.9e0a18f2.chunk.js"
   },
   {
     "revision": "830c55e5e5effdba80df2f1b4bb9b6b9",
-    "url": "/Headphonex/static/js/2.4282124a.chunk.js.LICENSE"
+    "url": "/Headphonex/static/js/2.9e0a18f2.chunk.js.LICENSE"
   },
   {
-    "revision": "5cb39bc7545242713974",
-    "url": "/Headphonex/static/js/main.31f189d1.chunk.js"
+    "revision": "4c5a7b85c8ad061597ac",
+    "url": "/Headphonex/static/js/main.8ec98979.chunk.js"
   },
   {
     "revision": "fb9a10a39312303022a7",

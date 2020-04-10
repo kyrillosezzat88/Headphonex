@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Headphonex/precache-manifest.bcbaf173294ced9eb7442e58d8a2e068.js"
+  "/Headphonex/precache-manifest.d816af9e79cf3823066903de4d3b47c6.js"
 );
 
 self.addEventListener('message', (event) => {
